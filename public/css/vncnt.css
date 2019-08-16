@@ -19,32 +19,80 @@ there.
 @import url('skeleton.css');
 
 .landingpage {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    margin-right: -50%;
-    transform: translate(-50%, -50%);
-    max-width: 90%;
+  position: relative;
+  margin: 0 auto;
+  padding: 2em 0px;
+  /*position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);*/
+  max-width: 90%;
 }
 
 p.reset-margin {
-    margin-bottom: 1rem; /*skeleton.css: 2.5rem*/
+  margin-bottom: 1rem; /*skeleton.css: 2.5rem*/
 }
 
 .avatar {
-    width: 30rem;
-    border-radius: 50%;
-    -webkit-border-radius: 50%;
-    -moz-border-radius: 50%;
-    max-width: 60%;
-    box-sizing: border-box;
+  width: 30rem;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  max-width: 40%;
+  box-sizing: border-box;
 
-    display: block;
-    margin: auto;
+  display: block;
+  margin: auto;
+}
+
+.column-project {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.column-project .img-project {
+  width: 120px;
+  height: 120px;
+  margin: 0px auto;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.column-project a {
+  font-size: 1.2em;
+}
+
+.column-project p {
+  font-size: .9em;
+}
+
+.column-project .img-project img {
+  display: block;
+  max-width: 100%;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  box-sizing: border-box;
+  transition: transform .5s; /* Animation */
+}
+
+.column-project:hover .img-project,
+.column-project:focus .img-project img {
+  -webkit-transform: scale(1.2);
+  -moz-transform: scale(1.2);
+  transform: scale(1.2);
 }
 
 .autocenter {
     text-align: center;
+}
+
+.skils {
+  color: #673AB7;
+  text-decoration: none;
+  text-transform: none;
+  font-style: normal;
 }
 
 .icons {
@@ -65,18 +113,25 @@ p.reset-margin {
 /* Larger than phablet (also point when grid becomes active) */
 @media (min-width: 550px) {
     .landingpage {
-        position: absolute;
+        position: relative;
+        margin: 0 auto;
+        padding: 2em 0px;
+        /*position: absolute;
         top: 50%;
         left: 50%;
         margin-right: -50%;
-        transform: translate(-50%, -50%);
-        max-width: 75%;
+        transform: translate(-50%, -50%);*/
+        /* max-width: 75%; */
+        max-width: 600px;
     }
 
     .avatar {
-        max-width: 100%;
+        /* max-width: 100%; */
+        width: 100%;
         box-sizing: border-box;
-        float: right;
+        max-width: 60%;
+        /* float: right; */
+        text-align: center;
     }
 
     .autocenter {
