@@ -57,6 +57,8 @@ p.reset-margin {
   margin: 0px auto;
   margin-bottom: 20px;
   text-align: center;
+  display: flex !important;
+  align-items: center;
 }
 
 .column-project a {
@@ -75,6 +77,12 @@ p.reset-margin {
   -moz-border-radius: 50%;
   box-sizing: border-box;
   transition: transform .5s; /* Animation */
+}
+
+.column-project .img-project img.no-border {
+  border-radius: 0;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
 }
 
 .column-project:hover .img-project,
