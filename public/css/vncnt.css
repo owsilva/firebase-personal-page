@@ -115,6 +115,10 @@ p.reset-margin {
     color: #555555;
 }
 
+.twitter-tweet {
+  margin-left: 43px;
+}
+
 /* Larger than mobile */
 @media (min-width: 400px) {}
 
